@@ -1,0 +1,31 @@
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "rules": {
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "jsx-no-bind": [
+      false, 
+      {
+        "ignoreRefs": true,
+        "allowArrowFunctions": true,
+        "allowBind": true
+      }
+    ],
+    "no-console": {
+            "options": [
+                "debug",
+                "info",
+                "time",
+                "timeEnd",
+                "trace"
+            ]
+        }
+  },
+  "linterOptions": {
+    "exclude": [
+      "src/**/*.ts",
+      "config/**/*.js",
+      "node_modules/**/*.ts"
+    ]
+  }
+}
